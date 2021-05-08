@@ -19,13 +19,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header-banner {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0;
+    height: 200px;
+}
+
 h1 {
     background-image: url(images/flower-banner.png);
-    padding: 150px 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 50px;
     background-color: #F4ECE1;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: right;
     margin: 0;
     color: #6B6D76;
+    grid-column-start: 2;
+    height: 194.08px;
 }
+
+.hero_banner {
+    width: 150px;
+    background-color: #F4ECE1;
+    grid-column-start: 1;
+}
+
