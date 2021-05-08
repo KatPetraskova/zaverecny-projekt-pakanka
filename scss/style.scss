@@ -1,0 +1,47 @@
+$bezova: #DEC4A1;
+$dim-gray: #6B6D76;
+$fialova: #DBBBF5;
+$zelena: #98C480;
+$linen: #F4ECE1;
+
+$pismo: 'Montserrat', sans-serif;
+$velikost-pisma: 16px;
+
+// -------------------------------------
+
+html {
+    box-sizing: border-box;
+}
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+ 
+footer {
+    max-height: 80px;
+    background-color: $dim-gray;
+    color: $linen;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+body {
+    font-family: $pismo;
+}
+
+h1 {
+    background-image: url(/images/flower-banner.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: left;    
+    background-color: $linen;
+    padding: 80px;
+    text-align: right;
+    margin: 0;
+    color: $dim-gray;
+    max-height: 300px;
+}
+
+
+

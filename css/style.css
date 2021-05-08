@@ -1,49 +1,33 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 *, ::before, ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
- 
+
 footer {
-    height: 60px;
-    background-color: #6B6D76;
-    color: #F4ECE1;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
+  max-height: 80px;
+  background-color: #6B6D76;
+  color: #F4ECE1;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.header-banner {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 0;
-    height: 200px;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    background-image: url(images/flower-banner.png);
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 50px;
-    background-color: #F4ECE1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: right;
-    margin: 0;
-    color: #6B6D76;
-    grid-column-start: 2;
-    height: 194.08px;
-}
-
-.hero_banner {
-    width: 150px;
-    background-color: #F4ECE1;
-    grid-column-start: 1;
-}
-
+  background-image: url(/images/flower-banner.png);
+  background-size: 180px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #F4ECE1;
+  padding: 80px;
+  text-align: right;
+  margin: 0;
+  color: #6B6D76;
+  max-height: 300px;
+}/*# sourceMappingURL=style.css.map */
