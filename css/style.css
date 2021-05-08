@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+ 
+footer {
+    height: 60px;
+    background-color: #6B6D76;
+    color: #F4ECE1;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    background-image: url(images/flower-banner.png);
+    padding: 150px 20px;
+    background-color: #F4ECE1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    margin: 0;
+    color: #6B6D76;
+}
