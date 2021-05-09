@@ -1,13 +1,8 @@
-$bezova: #DEC4A1;
-$dim-gray: #6B6D76;
-$fialova: #DBBBF5;
-$zelena: #98C480;
-$linen: #F4ECE1;
-
-$pismo: 'Montserrat', sans-serif;
-$velikost-pisma: 16px;
+@use 'vars';
 
 // -------------------------------------
+
+// mobil - do 640px, tablet - do 1100 px, PC - nad 110 px
 
 html {
     box-sizing: border-box;
@@ -19,29 +14,88 @@ html {
  
 footer {
     max-height: 80px;
-    background-color: $dim-gray;
-    color: $linen;
+    background-color: vars.$dim-gray;
+    color: vars.$linen;
     text-align: center;
     padding: 20px;
     margin: 0;
 }
 
 body {
-    font-family: $pismo;
+    font-family: vars.$pismo;
+    font-size: vars.$velikost-pisma;
+    margin: auto;
+    color: vars.$dim-gray;
 }
 
 h1 {
-    background-image: url(/images/flower-banner.png);
+    background-image: url(/images/logo.png);
     background-size: 180px;
     background-repeat: no-repeat;
-    background-position: left;    
-    background-color: $linen;
-    padding: 80px;
-    text-align: right;
+    background-position: center; 
+    background-color: vars.$linen;
+    height: 180px;    
     margin: 0;
-    color: $dim-gray;
-    max-height: 300px;
+    padding-top: 100px;
+    
+    @media (max-width: 440px){
+        color: vars.$linen;
+        font-size: 0px;
+    }
+
+    @media (min-width: 440px){
+        font-size: 0px;
+        color: vars.$dim-gray;
+        text-align: right;
+    }
+        
+    @media (min-width: 640px){
+        background-position: left;
+        max-height: 300px;
+        font-size: 28px;
+        padding: 80px;
+    }
+
+    @media (min-width: 1000px){
+        background-position: center;
+        padding: 80px 100px;
+        max-height: 300px;
+        text-align: right;
+        font-size: 28px;
+    }
 }
 
+.menu {
+    display: flex;
+    background-color: vars.$bezova;
+    font-weight: bold;
+    width: 100%;
+        
+    &__list {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		list-style: none;
 
+        @media (max-width: 440px){
+            flex-direction: column;
+        }
+	}
 
+	&__link {
+		display: block;
+		padding: 10px 20px;
+		color: vars.$dim-gray;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			background-color: vars.$linen;
+		}
+    }
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}

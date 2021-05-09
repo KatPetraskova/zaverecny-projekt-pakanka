@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts / font-family: 'Dancing Script', cursive; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google fonts / font-family: 'Montserrat', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title> {{ title }} </title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Ručně vyráběná razítka</h1>   
+        
+        <div class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+                <li class="menu__item"><a href="/o_mne/" class="menu__link">O mně</a></li>
+                <li class="menu__item"><a href="/vyrobky/" class="menu__link">Výrobky</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    {{ content | safe }}
+
+    <footer>
+        &copy; Kateřina Petrášková - Czechitas, Staň se kodérkou - jaro 2021
+    </footer>    
+        
+</body>
+</html>
