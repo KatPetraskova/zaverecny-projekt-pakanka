@@ -2,7 +2,7 @@
 
 // -------------------------------------
 
-// mobil - do 640px, tablet - do 1100 px, PC - nad 110 px
+// mobil - do 640px, tablet - do 1000 px, PC - nad 1000 px
 
 html {
     box-sizing: border-box;
@@ -96,6 +96,71 @@ h1 {
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+h2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding: 30px;
+    margin: 0;
+
+    &::after {
+        content: " ";
+        display: block;
+        width: 50px;
+        height: 3px;
+        color: vars.$zelena;
+        padding: 5px;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+.text-uvod {
+
+    @media (max-width: 640px){
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 0px 30px 20px 30px;
+    }
+
+    @media (min-width: 640px){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 30px;
+    }
+}
+
+.image-uvod,
+.image-novinky {
+
+    border-radius: 50%;
+    padding: 0;
+    margin: 30px;
+
+    @media (max-width: 640px) {
+        max-width: 100px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        
+    }
+
+    @media (min-width: 640px) {
+        max-width: 150px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        
+    }
+}
+
+.image-uvod {
+    border: 3px solid vars.$linen;
+    box-shadow: 2px 2px vars.$bezova;
 }

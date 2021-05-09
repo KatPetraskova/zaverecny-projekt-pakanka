@@ -91,6 +91,72 @@ h1 {
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+h2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  padding: 30px;
+  margin: 0;
+}
+h2::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 3px;
+  color: #98C480;
+  padding: 5px;
+}
+@media (max-width: 640px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-uvod {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0px 30px 20px 30px;
+  }
+}
+@media (min-width: 640px) {
+  .text-uvod {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px;
+  }
+}
+
+.image-uvod,
+.image-novinky {
+  border-radius: 50%;
+  padding: 0;
+  margin: 30px;
+}
+@media (max-width: 640px) {
+  .image-uvod,
+.image-novinky {
+    max-width: 100px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+@media (min-width: 640px) {
+  .image-uvod,
+.image-novinky {
+    max-width: 150px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+}
+
+.image-uvod {
+  border: 3px solid #F4ECE1;
+  box-shadow: 2px 2px #DEC4A1;
 }/*# sourceMappingURL=style.css.map */
