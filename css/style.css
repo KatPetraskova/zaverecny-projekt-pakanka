@@ -91,7 +91,7 @@ h1 {
 }
 
 .main-index {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -118,6 +118,32 @@ h1 {
 @media (min-width: 1000px) {
   .main-omne {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-vyrobky {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .main-vyrobky {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-kontakt {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .main-kontakt {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -150,14 +176,14 @@ h1 {
   padding: 30px;
   margin: 0;
   justify-self: center;
-  /* &::after {
-      content: " ";
-      display: block;
-      width: 50px;
-      height: 3px;
-      color: vars.$zelena;
-      padding: 5px;
-  } */
+}
+.nadpis-omne::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 3px;
+  color: #98C480;
+  padding: 5px;
 }
 @media (max-width: 640px) {
   .nadpis-omne {
@@ -166,13 +192,50 @@ h1 {
     grid-column-end: 1;
   }
 }
-@media (max-width: 1000px) {
-  .nadpis-omne {
+
+.nadpis-vyrobky {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding: 30px;
+  margin: 0;
+  justify-self: right;
+}
+.nadpis-vyrobky::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 3px;
+  color: #98C480;
+  padding: 5px;
+}
+@media (max-width: 640px) {
+  .nadpis-vyrobky {
     font-size: 20px;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    justify-self: left;
-    padding-left: 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+.nadpis-kontakt {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding: 30px;
+  margin: 0;
+  justify-self: right;
+}
+.nadpis-kontakt::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 3px;
+  color: #98C480;
+  padding: 5px;
+}
+@media (max-width: 640px) {
+  .nadpis-kontakt {
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
 
@@ -256,18 +319,10 @@ h1 {
     display: none;
   }
 }
-@media (min-width: 640px) {
-  .image-omne-sec {
-    max-width: 150px;
-    grid-column-start: 2;
-    grid-column-end: 2;
-  }
-}
-@media (max-width: 1000px) {
+@media (min-width: 640px) and (max-width: 1000px) {
   .image-omne-sec {
     max-width: 200px;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-auto-flow: dense;
   }
 }
 @media (min-width: 1000px) {
@@ -300,4 +355,28 @@ h1 {
     grid-column-start: 2;
     grid-column-end: 2;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+.prvni_pravo {
+    @media (min-width: 640px) and (max-width: 1000px) {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+}
+
+.druhy_pravo {
+    @media (min-width: 640px) and (max-width: 1000px) {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+}
+
+.treti_pravo {
+    @media (min-width: 640px) and (max-width: 1000px) {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+}
+
+*//*# sourceMappingURL=style.css.map */
