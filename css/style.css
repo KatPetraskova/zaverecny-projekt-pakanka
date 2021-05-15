@@ -311,12 +311,22 @@ h1 {
   }
 }
 
+.image-kontakt {
+  max-width: 100px;
+  border-radius: 50px;
+  padding: 5px;
+  margin: auto;
+  justify-self: center;
+  border: 2px solid #6B6D76;
+}
+
 .main-vyrobky {
   max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  gap: 20px;
 }
 @media (max-width: 640px) {
   .main-vyrobky {
@@ -343,10 +353,46 @@ h1 {
   max-width: 300px;
   border-radius: 50px;
   padding: 0;
-  margin: 20px;
+  margin: auto;
   justify-self: center;
   border: 2px solid #DEC4A1;
   box-shadow: 1px 2px #c2b5a3;
+}
+@media (max-width: 440px) {
+  .image-vyrobky {
+    max-width: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .image-vyrobky {
+    max-width: 200px;
+  }
+}
+
+.razitko {
+  padding: 20px;
+  margin: auto;
+  align-self: center;
+  border: 2px solid #DEC4A1;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nazev-razitko,
+.cena-razitko {
+  font-weight: bold;
+  padding: 15px;
+}
+
+.popis-razitko {
+  padding: 15px;
+}
+
+.cena-razitko {
+  text-align: right;
 }
 
 html {

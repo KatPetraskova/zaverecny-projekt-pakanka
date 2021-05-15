@@ -29,3 +29,13 @@
         grid-column-end: 1;
     }
 }
+
+.image-kontakt {
+    max-width: 100px;
+    border-radius: 50px;
+    padding: 5px;
+    margin: auto;
+    justify-self: center;
+    border: 2px solid vars.$dim-gray;
+}
+    
