@@ -1,0 +1,43 @@
+@use 'vars';
+
+// -------------------------------------
+
+// mobil - do 640px, tablet - do 1000 px, PC - nad 1000 px
+
+.main-vyrobky {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nadpis-vyrobky {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px;
+    margin: 0;
+    justify-self: center;
+
+    @media (max-width: 640px) {
+        font-size: 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+.image-vyrobky {
+    max-width: 300px;
+    border-radius: 50px;
+    padding: 0;
+    margin: 20px;
+    justify-self: center;
+    border: 2px solid vars.$bezova;
+    box-shadow: 1px 2px #c2b5a3;
+}
+
+

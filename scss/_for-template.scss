@@ -1,0 +1,104 @@
+@use 'vars';
+
+// -------------------------------------
+
+// mobil - do 640px, tablet - do 1000 px, PC - nad 1000 px
+
+footer {
+    max-height: 80px;
+    background-color: vars.$dim-gray;
+    color: vars.$linen;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    background-image: url(/images/logo.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: vars.$linen;
+    height: 180px;    
+    margin: 0;
+    padding-top: 100px;
+    
+    @media (max-width: 440px){
+        color: vars.$linen;
+        font-size: 0px;
+    }
+
+    @media (min-width: 440px){
+        font-size: 0px;
+        color: vars.$dim-gray;
+        text-align: right;
+    }
+        
+    @media (min-width: 640px){
+        background-position: left;
+        max-height: 300px;
+        font-size: 28px;
+        padding: 80px;
+    }
+
+    @media (min-width: 1000px){
+        background-position: center;
+        padding: 80px 100px;
+        max-height: 300px;
+        text-align: right;
+        font-size: 28px;
+    }
+}
+
+.menu {
+    background-color: vars.$bezova;
+    font-weight: bold;
+    width: 100%;
+
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+        
+        @media (min-width: 440px){
+            display: none;
+        }
+    }
+
+    &__checkbox:checked ~ .menu__list {
+
+        @media (max-width: 439px) {
+            display: block;
+        }
+    }
+
+    &__toggler {
+        cursor: pointer;
+
+        @media (min-width: 440px) {
+            display: none;
+        }
+    }
+
+    &__list {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+
+        @media (max-width: 440px) {
+            display: none;
+        }
+    }
+
+	&__link {
+		display: block;
+		padding: 10px 20px;
+		color: vars.$dim-gray;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			background-color: vars.$linen;
+		}
+    }
+}

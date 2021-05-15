@@ -1,0 +1,31 @@
+@use 'vars';
+
+// -------------------------------------
+
+// mobil - do 640px, tablet - do 1000 px, PC - nad 1000 px
+
+.main-kontakt {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nadpis-kontakt {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 30px;
+    margin: 0;
+    justify-self: right;
+
+    @media (max-width: 640px) {
+        font-size: 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
