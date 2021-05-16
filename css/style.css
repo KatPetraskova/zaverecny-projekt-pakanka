@@ -298,10 +298,10 @@ h1 {
 
 .nadpis-kontakt {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 4;
   padding: 30px;
   margin: 0;
-  justify-self: right;
+  justify-self: center;
 }
 @media (max-width: 640px) {
   .nadpis-kontakt {
@@ -311,13 +311,55 @@ h1 {
   }
 }
 
+.kontakt-ikona {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+@media (min-width: 640px) {
+  .kontakt-ikona {
+    max-width: 800px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
 .image-kontakt {
-  max-width: 100px;
+  width: 80px;
   border-radius: 50px;
   padding: 5px;
-  margin: auto;
-  justify-self: center;
+  margin-left: 20px;
   border: 2px solid #6B6D76;
+}
+
+.text-icon {
+  max-width: 300px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.nadpis-formular {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  padding: 30px;
+  margin: 0;
+  justify-self: center;
+}
+@media (max-width: 640px) {
+  .nadpis-formular {
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 15px;
 }
 
 .main-vyrobky {

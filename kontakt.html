@@ -7,13 +7,46 @@ title: Pakanka - ručně vyráběná razítka
 
     <h2 class="nadpis-kontakt">Kontakt</h2>
 
-    <img class="image-kontakt" src="/images/telephone.png" alt="Ikona mobilu">
-    <div class="text-icon">+420 123 456 789</div>
+    <div class="kontakt-ikona">
+        <img class="image-kontakt" src="/images/phone.jpg" alt="Ikona mobilu">
+        <div class="text-icon">+420 123 456 789</div>
+    </div>
 
-    <img class="image-kontakt" src="/images/ntb.jpg" alt="Ikona notebooku">
-    <div class="text-icon">mail@mail.com</div>
+    <div class="kontakt-ikona">
+        <img class="image-kontakt" src="/images/mail1.jpg" alt="Ikona obálky">
+        <div class="text-icon">mail@mail.com</div>
+    </div>
 
-    <img class="image-kontakt" src="/images/mail.jpg" alt="Ikona obálky">
-    <div class="text-icon">Poštovní ulice 1, Praha 1</div>
+    <div class="kontakt-ikona">
+        <img class="image-kontakt" src="/images/domecek.jpg" alt="Ikona domečku">
+        <div class="text-icon">Poštovní ulice 1, Praha 1</div>
+    </div>
+
+    <h3 class="nadpis-formular">Kontaktní formulář</h3>
+
+    <form method="post" action="XYZ">
+       
+
+        <label class="label">
+            Jméno a příjmení
+            <input type="text" name="jmeno" id="jmeno" placeholder="Jméno a příjmení">
+        </label>
+
+        <label class="label">
+            E-mail
+            <input type="email" name="mail" id="email" placeholder="E-mail">
+        </label>
+
+        <label class="label">
+            Napište nám
+            <textarea name="napiste" id="napiste" cols="10" rows="5" maxlength="200">
+                Váš vzkaz
+            </textarea>
+        </label>
+
+        <input type="submit">
+
+
+    </form>
     
 </main>
