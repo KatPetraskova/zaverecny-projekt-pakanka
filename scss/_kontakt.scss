@@ -58,17 +58,18 @@
 }
 
 .nadpis-formular {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
     padding: 30px;
     margin: 0;
     justify-self: center;
 
-    @media (max-width: 640px) {
+    @media (min-width: 640px) {
         font-size: 20px;
-        grid-column-start: 1;
-        grid-column-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
     }
 }
 
@@ -77,4 +78,40 @@
     flex-direction: column;
     max-width: 400px;
     padding: 15px;
+}
+
+.name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    
+    @media (min-width: 640px) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+}
+
+.mail {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    
+    @media (min-width: 640px) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+}
+
+.vzkaz {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    
+    @media (min-width: 640px) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 5;
+    }
 }
