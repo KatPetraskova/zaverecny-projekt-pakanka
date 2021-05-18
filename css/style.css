@@ -28,7 +28,7 @@
   margin: 30px;
   justify-self: center;
   border: 2px solid #DEC4A1;
-  box-shadow: 1px 2px #c2b5a3;
+  box-shadow: 2px 4px #c2b5a3;
 }
 @media (max-width: 640px) {
   .image-uvod,
@@ -219,7 +219,7 @@ h1 {
   margin: 20px;
   justify-self: center;
   border: 2px solid #DEC4A1;
-  box-shadow: 1px 2px #c2b5a3;
+  box-shadow: 2px 4px #afa598;
 }
 
 .image-omne-first {
@@ -437,8 +437,11 @@ h1 {
   padding: 0;
   margin: auto;
   justify-self: center;
-  border: 2px solid #DEC4A1;
-  box-shadow: 1px 2px #c2b5a3;
+  border: 3px solid #DEC4A1;
+  box-shadow: 2px 4px #b1a595;
+}
+.image-vyrobky:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 440px) {
   .image-vyrobky {
@@ -453,7 +456,7 @@ h1 {
 
 .razitko {
   padding: 20px;
-  margin: auto;
+  margin: 0 10px 20px 10px;
   align-self: center;
   border: 2px solid #DEC4A1;
   border-radius: 20px;
@@ -462,15 +465,16 @@ h1 {
   flex-direction: column;
   text-align: center;
 }
+.razitko:hover, .razitko:focus {
+  border: 4px solid #DEC4A1;
+  background-color: #F4ECE1;
+}
 
 .nazev-razitko,
 .cena-razitko {
   font-weight: bold;
-  padding: 15px;
-}
-
-.popis-razitko {
-  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 .cena-razitko {
