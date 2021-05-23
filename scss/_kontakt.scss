@@ -64,6 +64,7 @@
     padding: 30px;
     margin: 0;
     justify-self: center;
+    text-decoration: underline;
 
     @media (min-width: 640px) {
         font-size: 20px;
@@ -78,40 +79,38 @@
     flex-direction: column;
     max-width: 400px;
     padding: 15px;
+    text-align: right;
 }
 
-.name {
+.formular {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 6;
+    padding-bottom: 20px;
     
     @media (min-width: 640px) {
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 3;
+        grid-row-end: 6;
+    }
+
+    & textarea,
+    input {
+        border: 1px solid vars.$dim-gray;
+        background-color: vars.$linen;
+        border-radius: 5px;
     }
 }
 
-.mail {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
+.tlacitko {
+    background-color: vars.$linen;
+    color: vars.$dim-gray;
+    padding: 8px;
+    border: 1px solid vars.$dim-gray;
+    border-radius: 5px;
     
-    @media (min-width: 640px) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 4;
-    }
-}
-
-.vzkaz {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 8;
-    
-    @media (min-width: 640px) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 5;
+    &:hover {
+        background-color: vars.$bezova;
     }
 }
