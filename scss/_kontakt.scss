@@ -63,14 +63,16 @@
     grid-row-start: 5;
     padding: 30px;
     margin: 0;
-    justify-self: center;
-    text-decoration: underline;
+    text-align: center;
+    max-width: 400px;
+    
 
     @media (min-width: 640px) {
-        font-size: 20px;
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
+        text-align: right;
+        
     }
 }
 
@@ -80,6 +82,7 @@
     max-width: 400px;
     padding: 15px;
     text-align: right;
+    
 }
 
 .formular {
@@ -100,6 +103,8 @@
         border: 1px solid vars.$dim-gray;
         background-color: vars.$linen;
         border-radius: 5px;
+        font-family: vars.$pismo;
+        font-size: 20px;
     }
 }
 
@@ -114,3 +119,4 @@
         background-color: vars.$bezova;
     }
 }
+

@@ -345,15 +345,15 @@ h1 {
   grid-row-start: 5;
   padding: 30px;
   margin: 0;
-  justify-self: center;
-  text-decoration: underline;
+  text-align: center;
+  max-width: 400px;
 }
 @media (min-width: 640px) {
   .nadpis-formular {
-    font-size: 20px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
+    text-align: right;
   }
 }
 
@@ -384,6 +384,8 @@ h1 {
   border: 1px solid #6B6D76;
   background-color: #F4ECE1;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .tlacitko {
@@ -435,9 +437,6 @@ h1 {
   border: 3px solid #DEC4A1;
   box-shadow: 2px 4px #b1a595;
 }
-.image-vyrobky:hover {
-  transform: scale(1.2);
-}
 @media (max-width: 440px) {
   .image-vyrobky {
     max-width: 150px;
@@ -459,6 +458,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  cursor: pointer;
 }
 .razitko:hover, .razitko:focus {
   background-color: #F4ECE1;

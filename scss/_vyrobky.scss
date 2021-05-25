@@ -40,11 +40,6 @@
     border: 3px solid vars.$bezova;
     box-shadow: 2px 4px #b1a595;
 
-    &:hover {
-        transform: scale(1.2);
-
-    }
-
     @media (max-width: 440px) {
         max-width: 150px;
     }
@@ -64,6 +59,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    cursor: pointer;
 
     &:hover,
 	&:focus {
@@ -76,10 +72,6 @@
     font-weight: bold;
     padding-top: 25px;
     padding-bottom: 15px;
-}
-
-.popis-razitko {
-    
 }
 
 .cena-razitko {
